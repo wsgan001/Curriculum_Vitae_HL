@@ -1,0 +1,348 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% Owned by:
+% Huan Li (longaspire@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.84]{geometry} % Reduce document margins
+\usepackage[OT1]{fontenc}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{import}
+
+\makeatletter
+\renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\newcommand{\content}[1]{{\textrm{\fontsize{10pt}{\baselineskip}{#1}}}}
+\newcommand{\mybib}[1]{{\fontsize{10pt}{\baselineskip}{#1}}}
+\newcommand{\headline}[1]{{\bfseries{#1}}}
+\newcommand{\mycomments}[1]{{\small \textcolor[rgb]{0.2,0.2,0.2}{#1}}}
+\newcommand{\myterm}[1]{{\slshape{#1}}}
+\newcommand{\myinst}[1]{{{#1}}}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\textsc{Huan}} % Your first name
+\familyname{\textsc{Li}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\textsf{Curriculum Vitae}}
+\address{38 Zheda Road, Xihu District}{Hangzhou, Zhejiang 310026}
+\mobile{(+86) 136 46823639}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{lihuancs@zju.edu.cn}
+\homepage{www.longaspire.com}{www.longaspire.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Male, 1991-09-02}
+\photo[72pt][0.1pt]{pictures/avator.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\mycomments{\textit{Last update:  \today }}
+
+\bigskip\bigskip
+
+Ph.D candidate at \myinst{Department of Computer Science, Zhejiang University, China}. Research interests include \textbf{\myterm{mobile/pervasive computing}}, \textbf{\myterm{vision-based localization}} and \textbf{\myterm{indoor mobility data management/analysis}}. Passionate about science, research, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.
+
+\bigskip\bigskip
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015--2018}{Ph.D Candidate}{Computer Science and Software Engineering}{Zhejiang University}{China}{Thesis: ``\textit{Research on Uncertain Indoor Mobility Data Analysis and Mining}'' \hyperlink{doc_the}{\hfill| \footnotesize Details}\\During the period, I developed my ideas on designing context-dependent applications in large and complex indoor environment.}
+\cventry{2014--2015}{Visiting Student/Research Assistant}{Department of Computer Science}{Aalborg University}{Denmark}{I participated in an international academic cooperation project for half a year, working with \emph{Associate Prof.} Hua Lu$~{\hyperlink{hualuUrl}{[10]}}$ in the field of indoor mobility data management.}  %
+\cventry{2012--2014}{Ph.D Student}{Computer Science and Software Engineering}{Zhejiang University}{China}{GPA -- 3.58/4.0 \hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}\\
+I successfully passed the Qualifying Exam (QE) in August, 2014 and became a Ph.D candidate.}  % Advised by Prof.Gang Chen and co-advised by Prof.Lidan Shou.
+\cventry{2008--2012}{Undergraduate}{College of Computer Science}{Sichuan University}{China}{I ranked 2 / 466 and got my bachelor degree in June, 2012.
+%I also served as the monitor of the \emph{College's Innovation Experiment Class} for four years.
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2015--2017}{Project}{\textsc{Commercial Indoor Data Analysis and Visualization Platform}}{Database Laboratory}{Zhejiang University, China}{
+This project explored the idea that rapidly-increasing, massive and heterogeneous indoor positioning data can well reflect the behaviors of pedestrians and customers when they are walking in the shopping mall with their smartphones. Multiple useful and valuable knowledge can be discovered from those captured behaviors. For example, a store owner can know the stop duration, (semantic) trajectory and even personal preference of a visitor. It can benefit more from integrating with additional data sources (e.g., the products and sales data collected from the stores, the promotion data collected from the mall). The project was in cooperation with Tsinghua University and a famous shopping mall in Hangzhou downtown. I served as the project manager.
+Two relevant papers~{\hyperlink{tripspaper}{[VLDB18]}}{\hyperlink{semanticpaper}{[VLDB18, S1]}} have been published on/submitted to PVLDB. The detail information of this project can be referred to its website$~{\hyperlink{tripsUrl}{[1]}}$.\\}
+
+%------------------------------------------------
+
+\cventry{2015--Present}{Research}{\textsc{Literature Repository for Indoor Data Management}}{Database Laboratory}{Zhejiang University, China}{
+A good number of research topics have been recently concentrated on indoor mobility data management (e.g., cleansing, indexing, computation and query processing). In this project, I built a Literature Repository for the researchers or practitioners who are interested in such topics to discuss, explore, and inspire their thoughts and ideas. A batch of relevant literature was summarized in the form of latex-beamer-style slides. Those essential slides and paperwork have been published in the GitHub$~{\hyperlink{intro2idmgbUrl}{[2]}}$ and GitBook$~{\hyperlink{intro2idmgbUrl}{[3]}}$ synchronously. The ongoing project involves in total 600+ pages PDF, tens of related works from 100+ researchers.\\}
+
+%------------------------------------------------
+
+\cventry{2015--2016}{Research \& Project}{\textsc{Toolkit for Indoor Mobility Data Generation}}{Database Laboratory}{Zhejiang University, China}{
+Analytics on users' indoor mobility data has emerged as a promising research frontier. However, the community is missing a synthetic data generator that analysts could use to study algorithms assuming different indoor positioning technologies. In this project, we designed and implemented a generic, user-configurable toolkit for generating different types of indoor mobility data for real-world buildings. It can be used to simulate high volumes of indoor mobility data to evaluate location-dependent queries/algorithms. It can also provide the additional ``ground truth'' for effectiveness studies in analytics. A relevant paper {\hyperlink{li2016a}{[VLDB16]}} has been published on VLDB'16 --- one of the best conferences in the database field. The detail information of this project can be referred to its website {\hyperlink{vitaUrl}{[4]}}.\\}
+
+%------------------------------------------------
+
+\cventry{2014--2015}{Research}{\textsc{Indoor Density and Indoor Flow Analysis Techniques}}{Database Group}{Aalborg University, Denmark}{
+During the period, I was a visiting researcher (advised by \emph{Associate Prof.} Hua Lu) in the Center for Data-intensive Systems (Daisy) at Aalborg University --- a group led by \emph{Prof.} C.~S.~Jensen. My research at Daisy focused on the novel density and flow analysis techniques in complicated indoor scenarios. We investigated two kinds of data uncertainties that result from indoor positioning, namely the spatial uncertainty and temporal uncertainty. Considering the characteristics of indoor space topology and indoor moving objects, we devised efficient and effective data structures and algorithms to find the densest or the most frequently-visited indoor regions from the uncertain indoor positioning data. Our findings are practically useful in human's daily life (e.g., congestion control and public resource management). Two relevant papers {\hyperlink{densepaper}{[TKDE18]}}{\hyperlink{flowpaper}{[TKDE18, S1]}} have been published on/submitted to IEEE TKDE, one of the leading journals for database and data mining.\\}
+
+%------------------------------------------------
+
+\cventry{2013--2014}{Research}{\textsc{Vision-Enhanced Indoor Positioning Techniques}}{Database Laboratory}{Zhejiang University, China}{
+In this project, my work mainly focused on the design of indoor localization system that can be adapted to heterogeneous environments and offer the location-aware services to a wide range of devices. To this end, we worked on the analysis of sensor information available on smartphones, such as the readings from the WiFi interface, compass and gyroscope and the images from the camera. To make full use of such data that refers to the same position, we devised a novel metric learning algorithm to synthesize a joint and more informative data feature for inferring the underlying device position and pose. A relevant paper {\hyperlink{li20152}{[Ubicomp15]}} has been published on ACM UbiComp'15, one of the topmost academic conference for mobile computing.\\}
+
+%------------------------------------------------
+
+\cventry{2012--2013}{Research \& Project}{\textsc{Cyber-Physical Language \& Context-aware Message System}}{Database Laboratory}{Zhejiang University, China}{During the period, I joined the Cyber-Physical System R\&D Group that discusses and develops the ideas of Cyber-Physical System, Interest of Things, and Augmented Reality Techniques. We proposed a novel lightweight XML-based markup language mechanism$~{\hyperlink{gu2013generic}{[5]}}$ allowing for organizing a set of related physical objects. To demonstrate the idea, I implemented a context-aware message system that allows users to immensely send and receive the message with perceiving the physical world context. The prototype incorporates a hybrid positioning module that provides seamless positioning during the cyber-physical web navigation outdoors and indoors. This is the first time I got to indoor positioning technologies.\\}
+
+%------------------------------------------------
+
+\cventry{2012}{Project}{\textsc{LBS Music Recommendation System}}{Database Laboratory}{Zhejiang University, China}{
+In this project, we developed an LBS Music Recommendation System named Pictune$~{\hyperlink{chen2012pictune}{[6]}}$. I served as the frontend developer, and my main task was to implement a cross-platform application with javascript and html5. The project was in cooperation with NetEase Inc.\\}
+
+%------------------------------------------------
+
+\cventry{2012}{Undergraduate Graduation Project}{\textsc{Design of Direction-Aware Tourism Information Search Engine}}{Database Laboratory}{Zhejiang University, China}{
+In this project, I designed and implemented a Java web application that allows users to search the tourism information according to the direction preference they specified. The core technique was extended based on a research paper$~{\hyperlink{li2012desks}{[7]}}$. The project was supervised by \emph{Prof.} Lidan Shou (Zhejiang University) and \emph{Associate Prof.} Xuwei Li (Sichuan University) when I was visiting the Database Laboratory of Zhejiang University.\\}
+
+%------------------------------------------------
+
+\cventry{2011}{The Innovative Experiment Program}{\textsc{AR-based Mobile Social Application}}{}{Sichuan University, China}{
+In this project, we designed and implemented an Augmented Reality (AR) browser on Android platform. The browser allows users to leave the message and multimedia information through a 3D real-world view. I served as the backend and app developer. The program was under the supervision of \emph{Associate Prof.} Hui Li. The application was awarded for the 1\textsuperscript{st} Prize in the \myterm{Computer Software Contest of Sichuan Province}.\\}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	THESIS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Doctoral Thesis}\hypertarget{doc_the}{}
+\cvitem{Title}{\headline{Research on Uncertain Indoor Mobility Data Analysis and Mining}}
+\cvitem{Advisors}{\emph{Prof.} Gang Chen and \emph{Prof.} Lidan Shou}
+\cvitem{Description}{Indoor space accommodates nearly 90\% of people's daily life.
+  On the other hand, the recent years have witnessed the great development and popularity of indoor sensing infrastructure and smartphones.
+  Driven by these two key factors, the mobility data produced by indoor users is continuously growing at an unprecedented rate.
+  Proper and effective analysis of such massive indoor mobility data can reveal and discover many valuable insights that were difficult to know in the past, and strongly supports multiple indoor location based intelligent services, such as customer analysis and precision marketing, security and emergency rescue, warehousing and logistics, public resources planning and optimization, environmental pollution and disease prevention, etc.
+  However, indoor mobility data is still limited by the indoor positioning techniques and the complex, dynamic indoor environment, thus suffering the following problems: i) Spatiotemporal uncertainty caused by low sampling issue and insufficient observations; ii) Semantic uncertainty caused by lack of application contexts.
+  These inherent uncertainties have posed great challenges to analytics.
+  This thesis proposes to model and analyze the aforementioned data uncertainties, by fully considering the general characteristics of indoor topology, indoor object movements, and indoor positioning mechanism.
+  On the top of the uncertainty analysis, the thesis also studies several popular indoor mobility data mining problems, including the dense region discovery, the most popular location extraction, and the mobility semantics construction.
+  The proposed techniques for uncertain data analysis and mining can be widely applied to the mobility data obtained from pervasive indoor environments and can effectively reduce the development conditions of indoor intelligent services.}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Distinctions}
+\cvitem{2016}{Alibaba Tianchi Algorithm Contest: Spatio-temporal distribution prediction of airport passengers (top-10 / 3455).}
+\cvitem{2016}{VLDB Fellowship Program Winner.}
+\cvitem{2015}{Triple A Graduate Award of Zhejiang University.}
+% \cvitem{2015}{\emph{Award of Honor for Graduate of Zhejiang University} (2014-2015)}
+% \cvitem{2015}{\emph{Outstanding Ph.D Student Scholarship of Zhejiang University} (2014-2015)}
+\cvitem{2015--2016}{Outstanding Ph.D Student Scholarship of Zhejiang University $\times$ 2.}
+\cvitem{2014}{Outstanding Graduate Leader Award of Zhejiang University.}
+% \cvitem{2013}{\emph{Award of Honor for Graduate of Zhejiang University} (2012-2013)}
+\cvitem{2013-2016}{Award of Honor for Graduate of Zhejiang University $\times$ 3.}
+\cvitem{2012}{Creative Talents Award of Sichuan University.}
+\cvitem{2009--2011}{China National Scholarship $\times$ 3.}
+% \cvitem{2011}{\emph{China National Scholarship for Undergraduate Students}}
+% %\cvitem{2011}{2\textsuperscript{nd} Award in National Professional Software Design Contest (Preliminary Round)}
+% \cvitem{2010}{\emph{China National Scholarship for Undergraduate Students}}
+% \cvitem{2009}{\emph{China National Scholarship for Undergraduate Students}}
+
+
+%----------------------------------------------------------------------------------------
+%	Activities
+%----------------------------------------------------------------------------------------
+
+\section{Social Activities}
+
+\cvitem{2014--Present}{I was invited to review the papers for \myterm{TKDE} (2016)$~{\hyperlink{tkdereviewer}{[11]}}$, \myterm{Journal of Mobile Information Systems} (2015), \myterm{UbiComp} (2014/2015), \myterm{DASFAA} (2017), \myterm{ICMR} (2017), and \myterm{SIGSPATIAL (2014/2015/2017)}.}
+\cvitem{2014}{I was in charge of visa application and volunteer recruitment for \myterm{VLDB 2014}$~{\hyperlink{vldbUrl}{[9]}}$.}
+\cvitem{2012--2015}{I served as the Campus Ambassador of \myterm{Hulu Inc} at Zhejiang University.}
+\cvitem{2012--Present}{I served as the Monitor of the \myterm{No.1 PhD Class of 2012} of Zhejiang University.}
+\cvitem{2009--2012}{I served as the Monitor of the \myterm{College's Innovation Class} of Sichuan University.}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Programming}{\myterm{java, python, C, matlab}.}
+% \cvitem{Tools}{\myterm{linux, \LaTeX, redis, elk stack, mongodb, docker, hadoop, spark}, etc.}
+\cvitem{Algorithms}{I have an intimate knowledge of \myterm{information retrieval}, \myterm{machine learning}, \myterm{data mining} and \myterm{data visualization}.}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2016.09}{\emph{Presentation} at the \myterm{VLDB International Conference} in Delhi, India.}
+\cvitem{2015.09}{\emph{Poster Presentation} at the \myterm{UbiComp International Conference} in Osaka, Japan.}
+\cvitem{2015.07}{\emph{Oral Presentation} at the \myterm{Sensor-enhanced Social Media (Sesame) Workshop}$~{\hyperlink{sesameUrl}{[8]}}$, held at Singapore.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Chinese}{mother tongue}{}
+\cvitemwithcomment{English}{intermediate}{Conversationally fluent}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAM SECTION
+%----------------------------------------------------------------------------------------
+
+\section{List of Exams}\hypertarget{grds_cleli}{}
+% \bigskip
+
+%\par{\centering\Large {Ph.D student in Computer Science}\par}\normalsize
+\begin{small}
+\begin{center}
+\begin{tabular}{lcc}
+\multicolumn{1}{c}{\textsc{Exam}}&{\textsc{Grade~~~~~}}&{\textsc{Credit}}\\ \hline
+\emph{Theory of Computing}                      	&94~~~~~&	2\\
+\emph{Advanced Operation System}                   &94~~~~~&	2\\
+\emph{Advanced Computer System Architecture}       &90~~~~~&	2\\
+\emph{Advanced Computer Network}                   &93~~~~~&	2\\
+\emph{Applied Mathematics for Computer Science I}	&90~~~~~&	2\\
+\emph{Applied Mathematics for Computer Science II}	&92~~~~~&	2\\
+\emph{Introduction to Artificial Intelligence}	    &89~~~~~&	2\\
+\emph{Data Mining}	                                &86~~~~~&	2\\
+\emph{Introduction to Machine Learning}	        &87~~~~~&	2\\
+\emph{Network Multimedia Search Engine}	        &89~~~~~&	2\\
+		& Total~~~~~&20\\\cline{2-3}
+&\textsc{Gpa~~~~~}&\textbf{3.58}
+\end{tabular}
+\end{center}
+\end{small}
+%\bigskip
+%\hrule
+%\bigskip
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interests}
+%
+% % \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+% %\cvlistdoubleitem{Reading\&Writing}{Travel}
+% %\cvlistdoubleitem{Cooking}{Sports}
+% %\cvlistitem{Violin}
+%
+% \cvitem{}{Reading, Writing, Travel, Cooking, Soccer, Violin.}
+
+\urlstyle{rm}
+
+\section{Publication and Papers in Submission}
+\mybib{
+
+\textrm{\cvitem{[Ubicomp15]}{\textbf{Huan Li}, Pai Peng, Hua Lu, Lidan Shou, Ke Chen, Gang Chen. E$^2$C$^2$: efficient and effective camera calibration in indoor environments. {\em ACM UbiComp}, 9--12, 2015.}\hypertarget{li20152}}
+
+\textrm{\cvitem{[VLDB16]}{\textbf{Huan Li}, Hua Lu, Xin Chen, Gang Chen, Ke Chen, Lidan Shou. Vita: A Versatile Toolkit for Generating Indoor Mobility Data for Real-World Buildings. {\em PVLDB}, 9(13):1453--1456, 2016.}\hypertarget{li2016a}}
+
+\textrm{\cvitem{[TKDE18]}{\textbf{Huan Li}, Hua Lu, Lidan Shou, Gang Chen, Ke Chen. In Search of Indoor Dense Regions: An Approach Using Indoor Positioning Data. {\em IEEE TKDE}, 15 pages, 2018.}\hypertarget{densepaper}}
+
+\textrm{\cvitem{[VLDB18]}{\textbf{Huan Li}, Feichao Shi, Hua Lu, Gang Chen, Ke Chen, Lidan Shou. TRIPS: A System for Translating Raw Indoor Positioning Data into Visual Mobility Semantics. {\em PVLDB}, 4 pages.}\hypertarget{tripspaper}}
+
+\textrm{\cvitem{[TKDE18, S1]}{\textbf{Huan Li}, Hua Lu, Lidan Shou, Gang Chen, Ke Chen. Finding Most Popular Indoor Semantic Locations Using Uncertain Mobility Data. Submitted to {\em IEEE TKDE}, 14 pages.}\hypertarget{flowpaper}}
+
+\textrm{\cvitem{[VLDB18, S1]}{\textbf{Huan Li}, Hua Lu, Gang Chen, Ke Chen, Qinkuang Chen, Lidan Shou. Towards Translating Raw Indoor Positioning Data into Mobility Semantics. Submitted to {\em PVLDB}, 13 pages.}\hypertarget{semanticpaper}}
+
+}
+
+\section{Reference}
+\mybib{
+
+\textrm{\cvitem{[1]}{TRIPS Project. \url{https://longaspire.github.io/trips}.}\hypertarget{tripsUrl}}
+
+\textrm{\cvitem{[2]}{Literature Repository for Indoor Data Management. \url{https://longaspire.github.io/intro2idm-gh}.}\hypertarget{intro2idmUrl}}
+
+\textrm{\cvitem{[3]}{Indoor Data Management. \url{https://longaspire.gitbooks.io/indoor-data-management/content}.}\hypertarget{intro2idmgbUrl}}
+
+\textrm{\cvitem{[4]}{Vita Project. \url{https://longaspire.github.io/vita}.}\hypertarget{vitaUrl}}
+
+\textrm{\cvitem{[5]}{Xiaoling Gu, Lidan Shou, Hua Lu, Gang Chen. A generic framework for cyber-physical web. {\em ACM Middleware}, 1, 2013.}\hypertarget{gu2013generic}}
+
+\textrm{\cvitem{[6]}{Ke Chen, Gang Chen, Lidan Shou, Fei Xia. Pictune: situational music recommendation from geotagged pictures. {\em ACM SIGIR}, 1011--1011, 2012.}\hypertarget{chen2012pictune}}
+
+\textrm{\cvitem{[7]}{Guoliang Li, Jianhua Feng, Jing Xu. Desks: Direction-aware spatial keyword search. {\em IEEE ICDE}, 474--485, 2012.}\hypertarget{li2012desks}}
+
+\textrm{\cvitem{[8]}{SeSaMe workshop 2015. \url{http://sesame.comp.nus.edu.sg/2015workshop}.}\hypertarget{sesameUrl}}
+
+\textrm{\cvitem{[9]}{VLDB2014 - Acknowledgement. \url{http://www.vldb.org/2014/acknowledge.html}.}\hypertarget{vldbUrl}}
+
+\textrm{\cvitem{[10]}{Hua LU's homepage. \url{http://people.cs.aau.dk/~luhua}.}\hypertarget{hualuUrl}}
+
+\textrm{\cvitem{[11]}{2016 TKDE Reviewers List. \url{https://www.computer.org/web/tkde}.}\hypertarget{tkdereviewer}}
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

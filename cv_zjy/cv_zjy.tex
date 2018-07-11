@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% Owned by:
+% Huan Li (longaspire@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{amssymb}
+\usepackage[scale=0.88]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{import}
+\usepackage{fontawesome}
+\usepackage{mathabx}
+
+\makeatletter
+\renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\newcommand{\intro}[1]{{\fontsize{12pt}{\baselineskip}{#1}}}
+\newcommand{\content}[1]{{\textrm{\fontsize{10pt}{\baselineskip}{#1}}}}
+\newcommand{\mybib}[1]{{\fontsize{10pt}{\baselineskip}{#1}}}
+\newcommand{\mycomments}[1]{{\small \textcolor[rgb]{0.55,0.55,0.55}{#1}}}
+\newcommand{\cnemph}[1]{{~\bfseries{#1}}~}
+\newcommand{\headline}[1]{{\bfseries{#1}}}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\textsc{周}} % Your first name
+\familyname{\textsc{静洋}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\textsf{Curriculum Vitae}}
+\address{浙江杭州，江干区}{}
+\mobile{\textsf{(+86) 159 68869729}}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{zhoujingyang1992@126.com}
+% \homepage{www.longaspire.com}{www.longaspire.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{女， 1992-10-02}
+\photo[84pt][0.1pt]{pictures/avator.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{\faWordpress  资深编辑 \hspace*{6mm} \faWeibo 美食博主 \hspace*{6mm} \faWeixin 自媒体人 \\
+{\small\faQuoteLeft}~~把街头巷尾的烟火小馆炒到排长队 \\
+也能策划出轰动全城的狼人杀直播赛事 \\
+网红情趣酒店、家居生活馆撸出$10$w+ \\
+我就是杭州本地最in生活方式的幕后推手~~{\small\faQuoteRight}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{CJK*}{UTF8}{gkai}                          % to typeset your resume in Chinese using CJK
+\makecvtitle % Print the CV title
+
+% \vspace{-25pt}
+% \mycomments{\textsf{最后修改日期: \today}}\\
+% \mycomments{\textsf{最后修改日期： July 1, 2017}}\\
+% \intro{
+% }
+
+\vspace*{30pt}
+
+%----------------------------------------------------------------------------------------
+%	Employment SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\faBriefcase工作经历}
+\cventry{2013.09\\--2014.01}{记者、编辑}{《华商会》杂志与《义乌商报》海外版}{浙江新媒体文化发展有限公司}{杭州}{\content{负责《华商会》杂志、《义乌商报》海外版的内容采编与发行，第一次接触户外采访和内容采编，媒体行业的新奇吸引着我，在这里我加深了对媒体行业的热爱.}\\}
+\cventry{2014.03\\--2015.01}{运营专员、编辑}{生活中心美食频道}{浙江新浪传媒有限公司}{杭州}{\content{负责美食频道内容的采编与更新，发现杭城美食热点，挖掘本地美食商户，了解用户对美食行业的阅读需求，策划线下美食主题活动，参与运营执行快消品牌推广.在这里结识了杭城餐饮圈的许多媒体同行与餐饮老板，积累了商户与人脉资源.}\\}  %
+\cventry{2015.01\\--2015.06}{组长，责任编辑}{效果运营中心鲜城运营组}{浙江新浪传媒有限公司}{杭州}{\content{负责鲜城团队的选题与策划，每周至少一个主题攻略的内容采编.算是上一个岗位的延续，但是鲜城给了我更多的空间去接触杭城本地生活的各行各业，整合鲜城与新浪资源，结合商户需求，带动线下消费.}\\}
+\cventry{2015.06\\--至今}{责任编辑，副主编}{自媒体运营部}{浙江新浪传媒有限公司}{杭州}{\content{负责运营微信公众号【舌尖杭州】、【杭州潮人】与【亲子街拍】，拓展创立mediapro自媒体联盟成员.从微信公众号的专职运营中，加强了资源拓展能力以及社群运营能力.在自媒体风潮中学习到了很多专业技能.}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\faCalendarCheckO项目履历}
+
+%------------------------------------------------
+
+\cventry{2016年}{\textsc{自营号运营及自媒体联盟影响力拓展}}{任职于新浪浙江自媒体运营部期间}{}{}{
+\content{
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~工作背景~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} 在当下微信公众号越来越成为主流媒体的大环境下，新浪浙江在2015年第二季度策划成立自媒体联盟的独立部门，希望打造的是中国影响力最大的自媒体联盟平台，通过新浪浙江平台的背书，将自媒体的价值最大化.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~主要职责~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 负责以【舌尖杭州】与【杭州潮人】为主的自媒体部门，主负责【舌尖杭州】账号运营. 从起初$2,000$不到的账号粉丝规模到$119,000+$，自己全程与账号共同成长.账号定位经历许多转变，到现在定位杭州本地餐饮精品原创内容推荐. 内容输出的背后是杭州本地餐饮资源的大量拓展，以及账号栏目的策划与包装，最主要的是精品内容的挖掘和稿件的精益求精；
+\\ \hspace*{6mm} $\blacktriangleright$ 账号栏目与包装：创立舌尖杭州【深夜食堂】、【食匠】、【特约撰稿人】、【美食家面对面】
+\\ \hspace*{6mm} $\blacktriangleright$ 社群运营：创建以微信群为主要媒介的粉丝社群，规模逾$3,000$人，其中，社群模式中还运营【舌尖杭州小秘书】账号，连接服务账号的粉丝群与客户群.
+\\ \hspace*{6mm} $\blacktriangleright$ 自媒体电商模式摸索，总部战略部署的电商模式探索，通过与跨境电商的合作，搭建专属舌尖杭州和杭州潮人的微店，通过社群和自媒体平台完成变现；
+\\ \hspace*{6mm} $\blacktriangleright$ 【舌尖杭州】\&【杭州潮人】品牌活动输出，通过整合新浪浙江线上资源与行业内的商家资源，从前期策划到资源整合及线下落地，全程统筹完成，打造【杭州潮人】在内的新浪浙江自媒体品牌影响力.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~重点项目~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 麦当劳·杭州潮人杯狼人杀；
+\\ \hspace*{6mm} $\blacktriangleright$ 城西银泰·杭州有嘻哈；
+\\ \hspace*{6mm} $\blacktriangleright$ 【美食家面对面】JW万豪甜品师教你DIY；
+\\ \hspace*{6mm} $\blacktriangleright$ 【深夜食堂】林拌鲜；
+\\ \hspace*{6mm} $\blacktriangleright$ 【食匠】山西老爷子--南新仓涮肉.
+\\}}
+
+%------------------------------------------------
+
+\cventry{2015年}{\textsc{鲜城app运营策划}}{任职于新浪浙江鲜城运营组期间}{}{}{
+\content{
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~主要职责~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} 鲜城目前的市场定位是一款立足于本地生活类涵盖美食／时尚购物／娱乐休闲等为主的无线端app，侧重于对用户的消费指引，专注原创攻略的推荐，通过内容的传播引起转发和阅读. 一方面做bd拓展本地商户资源，一方面给予用户优惠福利，刺激消费元素. 在职期间，统筹全组线上内容选题和文章质量把控，参与线下活动策划.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~重点项目~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 鲜粉团---807试吃活动：整合杭城美食商户，共提供数量807个，价值超$8$w的试吃名额.涵盖了杭城34家主流餐厅，最后鲜城上线活动攻略阅读数达到$4,800+$，评论数达到$780+$，活动微博阅读数$51.9$w，微信相关内容阅读数达到$1.6$w. 并且，此次活动在杭城餐饮圈内鲜城树立了不错的口碑，与此同时还刺激了APP日活量；
+\\ \hspace*{6mm} $\blacktriangleright$ 鲜城生活家--带你穿越泰国街头，肥鸭西餐厅用手机拍美食大片，飞马健身俱乐部--``享瘦''夏天，活动策划到线下活动组织与报道全程参与；
+\\ \hspace*{6mm} $\blacktriangleright$ 总部组织线上鲜粉节，运用手上商户资源提供资源福利，与商户保持良好沟通.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~运营经验~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 基于目前产品的整个运营模式，我主要把控小组日常选题分配与审核，抓住时下热点，挖掘用户爱看的选题，比如：天气变热也要吃高热量食品，封面图选择视觉冲击感较强的汉堡披萨炸鸡图片，吸引眼球与点击率；
+\\ \hspace*{6mm} $\blacktriangleright$ 根据主题选择杭城精品商家进行探店和推荐，了解推荐商家的特色亮点，将商户与用户的需求统一，制作精美图文攻略.
+\\}}
+
+%------------------------------------------------
+
+\cventry{2014年}{\textsc{商务项目与美食商户推广}}{任职于新浪浙江美食频道期间}{}{}{
+\content{
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~主要职责~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 美食频道日常内容运营（美食频道微博微信，PC端内容维护），通过日常内容运营第一手接触美食商户资源，同行业媒体资源以及吃货用户资源等各种大数据；
+\\ \hspace*{6mm} $\blacktriangleright$ 快消商超等品牌商务项目执行、根据客户需求制作营销运营方案、到最后运营执行的全程都进行了参与. 经历了新浪微博强盛阶段的尾声，深入了解包括微博微信在内的自媒体平台整合运营；
+\\ \hspace*{6mm} $\blacktriangleright$ 美食商户推广策划：通过对美食商户亮点的包装整合，加上资源福利，达到线上用户的阅读与参与，引流至线下进行消费. 推火了类似花藏面屋，外婆家动手吧，万象城pizza family，杭城十佳日料等美食商户.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~重点项目~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} $\blacktriangleright$ 嘉兴政府项目，话题运营$\varhash$帮嘉兴粽子上头条$\varhash$，获2014年第二季度新浪全国地方站最佳话题策划奖；
+\\ \hspace*{6mm} $\blacktriangleright$ 老恒河项目，$\varhash$蔡澜带你去湖州$\varhash$，获2014年新浪浙江站第三季度最佳营销策划奖；
+\\ \hspace*{6mm} $\blacktriangleright$ 新希望双峰乳业项目``全城寻鲜''，获2014年新浪浙江站第四季度最佳营销策划奖；
+\\ \hspace*{6mm} $\blacktriangleright$ 可口可乐华东地区商务项目，助力新品推广上市；
+\\ \hspace*{6mm} $\blacktriangleright$ 中国邮政商务项目``浙乡邮礼猕猴''的推广上市；
+\\ \hspace*{6mm} $\blacktriangleright$ 美食商户推广：西湖银泰花藏面屋、万象城pizza family、外婆家动手吧.
+\vspace*{4pt}
+\\
+\vspace*{4pt}
+-----------------------------------------------------
+$\bullet$~运营经验~$\bullet$
+-----------------------------------------------------
+\\ \hspace*{6mm} 在新浪浙江商务运营采取的项目责任制中，运营占据了很重要的位置，前期与策划一同对接销售客户，加入策划头脑风暴，提供策划创意点子，到运营阶段时主负责整个项目的推进，从搭建专题与技术设计部门对接到专题上线内容填充，通过高强度的锻炼，我的执行力获得了迅速提升.
+\\}}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\faStar获奖情况}
+\cvitem{2014年}{第二季度全站最佳达人运营奖``新浪浙江美食''.}
+\cvitem{2014年}{上半年总部嘉奖：全国地方站最佳话题营销奖``帮嘉兴粽子上头条''.}
+\cvitem{2014年}{第三季度最佳营销案例奖新希望``全城寻鲜''.}
+\cvitem{2014年}{第三季度最佳营销项目奖``老恒和·蔡澜带你去湖州''.}
+\cvitem{2014年}{新浪浙江优秀员工.}
+\cvitem{2014年}{年度最佳营销项目奖``新希望小牛''.}
+\cvitem{2015年}{第一季度鲜城全国地方站最佳活动策划奖``807鲜粉团''.}
+\cvitem{2015年}{上半年新浪浙江优秀员工.}
+\cvitem{2015年}{上半年地方站优秀产品运营奖《微信账号矩阵运营》.}
+
+%----------------------------------------------------------------------------------------
+%	Activities
+%----------------------------------------------------------------------------------------
+
+% \section{社会活动}
+%
+% \cvitem{2015--至今}{受邀担任~\textrm{TKDE} (2016)$^{~\hyperlink{tkdereviewer}{[12]}}$、\textrm{Journal of Mobile Information Systems} (2015)、\textrm{SIGSPATIAL 2015} (2015/2016/2017)~审稿人.}
+% \cvitem{2014}{国际顶级学术会议~\textrm{VLDB 2014}~志愿者负责人、签证事务负责人$^{\hyperlink{vldbUrl}{[9]}}$.}
+% \cvitem{2012--2015}{\textrm{Hulu}公司浙江大学校园大使.}
+% \cvitem{2012--至今}{\textsc{浙江大学2012级博士1班班长}.}
+% \cvitem{2009--2012}{四川大学计算机学院创新班班长.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\faGraduationCap教育背景}
+
+\cvitem{2008--2012}{北京体育大学，产业管理专业学士学位，重本，211高校}
+
+%----------------------------------------------------------------------------------------
+%	SKILL SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\faKey专业技能}
+
+\cvitem{英语}{通过CET-6大学英语六级考试.}
+\cvitem{软件}{熟悉使用Adobe Photoshop，Microsoft Office套件，有丰富的微信公众账号开发和拓展能力.}
+\cvitem{协作}{良好的表达能力，强烈的团队意识，出众的商务拓展能力.}
+\cvitem{其他}{全国普通话一级乙等，擅长演讲.}
+
+% ----------------------------------------------------------------------------------------
+% 	INTERESTS SECTION
+% ----------------------------------------------------------------------------------------
+
+\section{\faPuzzlePiece兴趣爱好}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Reading\&Writing}{Travel}
+%\cvlistdoubleitem{Cooking}{Sports}
+%\cvlistitem{Violin}
+
+\cvitem{}{阅读，写作，旅行，音乐.}
+
+
+%\bibliographystyle{plain}
+
+%\renewcommand{\refname}{Publications}
+%\section{\textbf{Publications}}
+%\nocite{*}
+
+%\bibliographystyle{plainyr}
+%\bibliography{ref}
+
+%\renewcommand{\refname}{Reference}
+
+\urlstyle{rm}
+
+% \section{学术著作}
+% \mybib{
+%
+% \textrm{\cvitem{[1]}{\textbf{Huan Li}, Pai Peng, Hua Lu, Lidan Shou, Ke Chen, Gang Chen. E$^2$C$^2$: efficient and effective camera calibration in indoor environments. in {\em UbiComp}, 9--12, 2015, ACM.}\hypertarget{li20152}}
+%
+% \textrm{\cvitem{[2]}{\textbf{Huan Li}, Hua Lu, Xin Chen, Gang Chen, Ke Chen, Lidan Shou. Vita: A Versatile Toolkit for Generating Indoor Mobility Data for Real-World Buildings. in {\em PVLDB} 9(13):1453--1456, 2016, ACM.}\hypertarget{li2016a}}
+%
+% }
+\section{\faLeanpub代表作品}
+
+\cvitem{\faTasks}{《24h不下床！杭州开了间``不可描述''的情侣酒店！超大9000方，角落里都是情趣小心机…好羞涩！》. 阅读$10$w+. \href{http://mp.weixin.qq.com/s/i6J2dE9oRcMbhSgbk3lB7A}{\faHandORight查看作品}.}
+\cvitem{\faTasks}{《这周末我们和杭州325000人一起见证了12个狼人杀顶尖高手诞生！他们现在爆照，到底谁人气最高？》. 阅读$32,932$. \href{http://mp.weixin.qq.com/s/Mg18EZhwevc7yGqEMHRtoA}{\faHandORight查看作品}.}
+\cvitem{\faTasks}{《杭州首家正宗潮汕酒家！就在嘉里中心，被誉为中国最高端菜系，从厨师到菜品，都是潮汕原样照搬而来…》. 阅读$10,043$. \href{http://mp.weixin.qq.com/s/oJ7b_qqLYR5s7KcT_sJX5A}{\faHandORight查看作品}.}
+\cvitem{\faTasks}{《杭州真的有一家深夜食堂！就在竞舟路！可以吃到老板亲自去日本钓的金枪鱼，还有特调的百香果+明前龙井…》. 阅读$15,594$. \href{http://mp.weixin.qq.com/s/bgwepG4Ftdz9pWAEHTcLMg}{\faHandORight查看作品}.}
+\cvitem{\faTasks}{《太好吃了！屏风街有家低调的老北京涮肉店，麻酱一级棒！还有杭州品质最好的涮羊肉、羊蝎子、山西炸酱面…》. 阅读$10,163$. \href{http://mp.weixin.qq.com/s/NwzvFCnfhFyxnoqzG10a5Q}{\faHandORight查看作品}.}
+
+\vspace*{40pt}
+\rightline{------------------------------------------}
+
+\rightline{\mycomments{\faPencil~~\textsf{最后更新于: \today}}}
+
+% ----------------------------------------------------------------------------------------
+% 	COVER LETTER
+% ----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+% \clearpage
+%
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{尊敬的HR先生或女士，} % Opening greeting
+% \closing{一颗真诚的心，} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+% \makelettertitle % Print letter title
+%
+% % \lipsum[1-3] % Dummy text
+% 互联网高速发展，互联网因此也成为了改变世界的社会性服务载体.栽种一棵树的最佳时间是十年前，其次就是现在，我希望能够在这个过程中和公司一起成长，也希望能够发挥我所有的热忱，做自己喜欢的工作，感谢认真阅读！
+%
+% \makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+\end{CJK*}
+\end{document}

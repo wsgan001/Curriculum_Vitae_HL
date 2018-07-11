@@ -1,0 +1,323 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% Owned by:
+% Huan Li (longaspire@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[scale=0.82]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{import}
+
+\makeatletter
+\renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\newcommand{\intro}[1]{{\fontsize{12pt}{\baselineskip}{#1}}}
+\newcommand{\content}[1]{{\textrm{\fontsize{10pt}{\baselineskip}{#1}}}}
+\newcommand{\mybib}[1]{{\fontsize{10pt}{\baselineskip}{#1}}}
+\newcommand{\mycomments}[1]{{\small \textcolor[rgb]{0.2,0.2,0.2}{#1}}}
+\newcommand{\cnemph}[1]{{\bfseries{#1}}}
+\newcommand{\headline}[1]{{\bfseries{#1}}}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\textsc{李}} % Your first name
+\familyname{\textsc{环}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\textsf{Curriculum Vitae}}
+\address{浙江省杭州市浙大路38号}{浙江大学玉泉校区}
+\mobile{\textsf{(+86) 136 46823639}}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{lihuancs@zju.edu.cn}
+\homepage{www.longaspire.com}{www.longaspire.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{男, 1991-09-02}
+\photo[80pt][0.1pt]{pictures/avator.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{CJK*}{UTF8}{gkai}                          % to typeset your resume in Chinese using CJK
+\makecvtitle % Print the CV title
+
+\vspace{-25pt}
+\mycomments{\textsf{最后修改日期: \today}}\\~\\
+% \mycomments{\textsf{最后修改日期： July 1, 2017}}\\
+\intro{
+浙江大学计算机科学与技术学院，数据库方向，博士研究生。主要研究内容涉及 \cnemph{移动/普适计算}，\cnemph{增强现实}与\cnemph{数据管理和数据挖掘}等领域。我热爱科学研究，拥有创新的头脑、良好的技术积累、丰富的项目开发经验以及优秀的团队协作精神，同时，更拥有一颗积极进取、充满活力、上下求索的心。
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育背景}
+\cventry{2015--2018}{博士候选人~\textrm{Ph.D Candidate}}{计算机科学与技术专业}{浙江大学}{}{\content{博士论文: 《不确定室内移动数据的分析挖掘方法研究》 \hyperlink{doc_the}{\hfill| \footnotesize 详情}\\在此期间，我结合自己在博士阶段积累的研究基础与创新想法，投入到对面向室内上下文环境的智能系统的开发实践工作当中，主要研究复杂室内环境下移动智能设备的空间上下文信息的感知计算与数据挖掘分析的问题。}\\}
+\cventry{2014--2015}{研究助理~\textrm{Research Assistant}}{计算机系}{奥尔堡大学}{丹麦}{\content{我参与了为期半年的学术交流，与丹麦奥尔堡大学（Aalborg University）的陆华副教授$^{\hyperlink{hualuUrl}{[10]}}$共同工作，投入到室内数据管理技术领域的研究中，涉及数据清洗、索引、查询优化等。}\\}  %
+\cventry{2012--2014}{博士生~\textrm{Ph.D Student}}{计算机科学与技术专业}{浙江大学}{}{\content{学分绩点 -- 3.58/4.0 \hyperlink{grds_cleli}{\hfill| \footnotesize 详情}\\
+我于2014年8月顺利通过博士生成绩考核测试Qualifying Exam (QE)，成为博士候选人。}\\}  % Advised by Prof.Gang Chen and co-advised by Prof.Lidan Shou.
+\cventry{2008--2012}{本科}{计算机学院}{四川大学}{}{\content{在本科学习期间，我努力进取，表现活跃，连续三次获评国家奖学金荣誉，最终以排名第二（学院总人数466人）的学业总成绩保送至浙江大学直接攻读博士学位。}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{项目经历}
+
+\cventry{2015--2017}{开发项目}{\textsc{面向购物中心的智能数据可视分析平台}}{浙江大学数据库实验室}{}{
+\content{担任总体设计和项目管理的角色。该项目提出了一个面向购物中心的商业数据分析和决策平台，主要利用大型商场在日常运营过程中产生的大量用户空间移动数据对商场的潜在目标客户的逛店行为进行语义分析和挖掘。同时结合商场的其他业务数据，设计有效的经济学模型完成联动分析，对不同类型的逛店客户进行精确营销，挖掘购物中心内部的空间价值，并且对购物中心的商业规划和业态布局进行策略支持。该项目的合作方为浙江省内某高端购物中心及清华大学建设管理系。该项目的两篇相关论文{\hyperlink{tripspaper}{[VLDB18]}}{\hyperlink{semanticpaper}{[VLDB18, S1]}}已分别录用在或投稿到数据库领域顶会\slshape{VLDB}，相关项目信息可以查询站点$^{\hyperlink{tripsUrl}{[1]}}$。\\}}
+
+%------------------------------------------------
+
+\cventry{2015--至今}{科研项目}{\textsc{室内数据管理的文献资料库}}{浙江大学数据库实验室}{}{
+\content{近年来，大量研究室内空间/物联网的数据管理方向的工作不断开始涌现。自2015年始，作为室内数据领域的开拓者之一，我们的课题组开始对相关的文献工作进行梳理。作为这个研究方向的博士学生，我利用闲暇时间开始阅读、整理和总结一系列在该领域具有代表性的典型工作，这些工作涉及到超过百名科研人员完成的数十篇论文和系统。通过我个人的不懈努力，目前这一文献资料库已经包含了超过600页的PDF文档的内容，并于近日同步更新在GitHub$^{\hyperlink{intro2idmgbUrl}{[2]}}$和GitBook$^{\hyperlink{intro2idmgbUrl}{[3]}}$，以方便更多的研究者、实践者来拓展自己的思路、发展自己的理论、做出更好的产品和服务。未来我计划通过更大的投入来完善和补充内容，争取使得该文献资料库具有一定的权威性和知名度。\\}}
+
+%------------------------------------------------
+
+\cventry{2015}{科研项目}{\textsc{通用的室内移动数据模拟生成工具}}{浙江大学数据库实验室}{}{
+\content{室内定位技术的成熟和智能移动终端的兴起使得室内位置数据得到了爆发式增长，对于海量的室内位置数据进行分析具有重要意义。开发一个通用的室内移动数据模拟生成工具可以向数据库业界提供更好的数据支持：第一，可以仿真各类真实室内空间下不同种类的定位算法和定位系统环境，保证数据质量；第二，可以提供更为详细的真值信息，帮助对分析和查询算法的有效性进行验证。因此，这个项目设计并实现了一个通用、可配置的多功能数据生成工具，从真实空间的建筑电子图纸中自动解析出建筑信息，模拟各类定位传感设备、移动设备、建筑元素等，提供多种典型的定位算法及相应的可调节参数，方便用户根据不同需求生成具有不同特性的室内位置数据集。该项目的相关论文{\hyperlink{li2016a}{[VLDB16]}}已经收录在数据库领域顶会\slshape{VLDB}中，相关项目信息可以查询站点$^{\hyperlink{vitaUrl}{[4]}}$。\\}}
+
+%------------------------------------------------
+
+\cventry{2014--2015}{科研项目}{\textsc{新型室内空间密度及流量查询处理技术的研究}}{丹麦奥尔堡大学数据库课题组}{}{\content{在此期间，我在陆华副教授的指导下，开始在丹麦奥尔堡大学的Daisy数据研究中心做访问研究人员。
+我在奥尔堡大学数据库课题组的主要研究工作为设计新型的复杂室内空间数据管理和查询处理算法。其中，主要研究了室内定位数据中存在的两种不确定性，即空间不确定性（\emph{spatial uncertainty}）和时序不确定性（\emph{temporal uncertainty}），同时也结合了移动物体在室内空间中移动的几何限制和拓扑限制条件，设计了高效、有效的算法来处理密度敏感的室内空间查询，用于解决一些真实场景下的应用问题，如拥堵疏散和安防管理等。两篇相关论文{\hyperlink{densepaper}{[TKDE18]}}{\hyperlink{flowpaper}{[TKDE18, S1]}}已录用在或投稿到顶级期刊\slshape{IEEE TKDE}中。\\}}
+
+%------------------------------------------------
+
+\cventry{2013--2014}{科研项目}{\textsc{视觉增强的精确空间上下文感知计算}}{浙江大学数据库实验室}{}{\content{在这项工作中，我的主要研究内容为设计和实现一个通用可扩展的架构，面向异构环境和多平台设备，提供准确可靠、高实时性的空间上下文的计算服务。为实现这一目标，我利用智能移动终端内置的各类传感设备，通过融合多种异构传感数据来建立室内场景的特征表达，用以识别移动终端的位置信息及其周围的物理环境。该框架首先利用度量学习技术得到多元混合特征来高效搜索当前图像帧的配准场景，再利用计算机视觉中的多视图几何原理和运动推断结构（SfM）从配准场景中逆向恢复移动设备的相机运动参数和相对位置，得到终端的空间上下文信息。该项目的主要研究成果{\hyperlink{li20152}{[Ubicomp15]}}发表在普适计算的国际顶会\slshape{ACM UbiComp}上。\\}}
+
+%------------------------------------------------
+
+\cventry{2012--2013}{科研项目}{\textsc{信息-物理标记语言的研究与上下文敏感（Context-aware）的消息系统的开发}}{浙江大学数据库实验室}{}{\content{在此期间，我加入了实验室的\cnemph{信息-物理系统（Cyber-Physical System）研发课题组}，探究关于推广信息物理融合相关概念的各种新颖想法，以及开发增强现实（\emph{AR, Augmented Reality}）的各类应用。其中，课题组发表的工作$^{\hyperlink{gu2013generic}{[5]}}$提出以一套基于\textsc{XML}的轻量级标记语言，利用空间元特征、多媒体元特征来组织物理空间中的实体，完成物理空间和信息空间的融合映射。为了更好地展示这项工作，我承担了原型系统开发的编码任务，设计和实现一个上下文敏感的消息系统，使得用户可以以浸入式的方式根据物理的上下文信息，快捷简易地收发各种消息。在原型系统的实现过程中，为了能够无缝地在室外和室内场景之间切换并获得物理空间实体的空间元特征，我实现了一个基于无线技术的定位模块，这是我首次接触到室内定位技术。\\
+}}
+
+%------------------------------------------------
+
+\cventry{2012}{开发项目}{\textsc{基于位置的音乐推荐系统}}{浙江大学数据库实验室}{}{\content{担任前端开发的编码工作。该项目基于实验室的理论研究成果$^{\hyperlink{chen2012pictune}{[6]}}$开发了一个基于位置的音乐推荐系统\slshape{Pictune}，合作方为网易公司。在项目中，使用了混合开发平台框架，利用javascript开发多个平台的终端产品。\\}}
+%------------------------------------------------
+
+\cventry{2012}{本科毕业设计}{\textsc{方向敏感的旅行信息搜索引擎研究}}{浙江大学数据库实验室}{}{\content{该论文是我于访问浙江大学数据库实验室期间，在寿黎但教授和四川大学的李旭伟副教授的共同指导下完成的。论文实现了一个通用的旅游信息搜索引擎框架，其中改进了一项方向敏感的空间关键字搜索技术$^{\hyperlink{li2012desks}{[7]}}$对空间兴趣点（POI）进行索引，利用快速有效的剪枝提高搜索性能。原型系统允许用户以AR的方式输入参数并对搜索结果进行浏览，答辩论文获评四川大学优秀本科毕业论文。\\}}
+
+%------------------------------------------------
+
+\cventry{2011}{大学生创新实验计划}{\textsc{基于增强现实的智能LBS社交软件的设计与开发}}{}{四川大学}{\content{担任总体设计及主要代码的编写工作（后端开发和APP开发）。该项目在大学生创新性实验计划项目申报过程中获得国家级立项，在本校同类作品中位列第一。项目基于终端平台android开发，使用增强现实技术存取空间多媒体数据，帮助用户在真实物理空间中通过终端3D视角在特定位置留下包含文本和多媒体数据的留言，完成基于LBS (\emph{Location Based Service}) 的社交应用的呈现。该项目在四川大学李辉副教授的指导下完成，开发完成的作品参赛并荣获四川省软件开发大赛一等奖。}
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{博士论文} \hypertarget{doc_the}
+\bigskip
+\cvitem{题目}{\headline{不确定室内移动数据的分析挖掘方法研究}}
+\cvitem{导师}{陈刚~教授， 寿黎但~教授}
+\cvitem{摘要}{\content{室内空间，作为核心的活动场所，占据了人类日常生活近90\%的时间。另一方面，室内传感基础设施和移动智能终端近年来也取得了长足的进步和发展。因两方面因素的共同作用，由室内用户产生的移动数据正前所未有的速度持续地增长着。对规模庞大的室内移动数据进行适当和有效的分析挖掘，将揭示和发现许多过去难以获知的有价值信息，有力地支持包括顾客行为分析和精准营销、安防及紧急救护、仓储和物流管理、资源规划及优化、环境污染及疾病预防在内的室内智能位置服务。然而，室内移动数据受到室内定位条件和复杂动态的室内环境的影响，存在以下固有的问题：i) 因采样稀疏和观测不充分引起的时空不确定性；ii) 因脱离上下文引起的语义不确定性。这些不确定性给分析应用带来了巨大挑战。为应对这些挑战，本文充分考虑了室内空间拓扑、室内对象移动和室内定位机制的一般性特点，对室内移动数据普遍具有的不确定性进行了通用的建模和分析，以解决重要的移动知识挖掘问题，包括密集区域挖掘、热点位置抽取和移动语义构建三项重要内容。本文提出的不确定数据分析挖掘的方法和解决方案，具有良好的通用性和可扩展性，能广泛用于普适环境下获得的室内移动数据，有效降低当前室内数据智能服务的开展条件。}}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{荣誉和获奖情况}
+\cvitem{2016}{阿里天池算法竞赛--机场客流量的时空分布预测（top-10 / 3455）.}
+\cvitem{2016}{VLDB奖学金.}
+\cvitem{2015}{浙江大学三好学生.}
+\cvitem{2015--2016}{浙江大学优秀博士生奖学金 $\times$ 2.}
+\cvitem{2014}{浙江大学优秀研究生干部.}
+\cvitem{2013--2016}{浙江大学优秀研究生 $\times$ 3.}
+\cvitem{2012}{四川大学创新人才奖.}
+\cvitem{2009--2011}{国家奖学金 $\times$ 3.}
+
+%----------------------------------------------------------------------------------------
+%	Activities
+%----------------------------------------------------------------------------------------
+
+\section{社会活动}
+
+\cvitem{2015--至今}{受程序组委会或主编邀请担任~\textrm{IEEE TKDE} (2016)$^{~\hyperlink{tkdereviewer}{[11]}}$、\textrm{Journal of Mobile Information Systems} (2015)、\textrm{UbiComp} (2014/2015)、\textrm{DASFAA} (2017)、\textrm{ICMR} (2017)、\textrm{SIGSPATIAL} (2014/2015/2017)~审稿人.}
+\cvitem{2014}{国际顶级学术会议~\textrm{VLDB 2014}~志愿者负责人、签证事务负责人$^{\hyperlink{vldbUrl}{[9]}}$.}
+\cvitem{2012--2015}{\textrm{Hulu}公司浙江大学校园大使.}
+\cvitem{2012--至今}{\textsc{浙江大学2012级博士1班班长}.}
+\cvitem{2009--2012}{四川大学计算机学院创新班班长.}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{专业能力}
+
+\cvitem{编程}{\textrm{java}、\textrm{python}、\textrm{C}、\textrm{matlab}.}
+% \cvitem{工具}{\textrm{linux，\LaTeX，redis，elk stack，mongodb，docker，hadoop，spark}等.}
+\cvitem{算法}{熟悉\cnemph{信息检索}、\cnemph{机器学习}、\cnemph{数据挖掘}以及\cnemph{数据可视化}的相关知识.}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{交流能力}
+
+\cvitem{2016.09}{国际顶级学术会议~\textrm{VLDB 2016}~展示，印度德里.}
+\cvitem{2015.09}{国际顶级学术会议~\textrm{UbiComp 2015}~海报宣讲，日本大阪.}
+\cvitem{2015.07}{国际学术论坛~\textrm{Sensor-enhanced Social Media (Sesame) Workshop}$^{~\hyperlink{sesameUrl}{[8]}}$~口头宣讲，新加坡.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{语言能力}
+
+\cvitemwithcomment{汉语}{母语}{}
+\cvitemwithcomment{英语}{良好}{能够流利对话}
+
+%----------------------------------------------------------------------------------------
+%	EXAM SECTION
+%----------------------------------------------------------------------------------------
+
+\section{课程成绩}\hypertarget{grds_cleli}
+\bigskip
+
+%\par{\centering\Large {Ph.D student in Computer Science}\par}\normalsize
+\begin{small}
+\begin{center}
+\begin{tabular}{ccc}
+\multicolumn{1}{c}{\textsc{课程}}&{\textsc{~~~~~成绩~~~~~}}&{\textsc{学分}}\\ \hline
+~~~~~~~~~~ 计算理论    ~~~~~~~~~~                  	&~~~~~94~~~~~&	2\\
+~~~~~~~~~~ 高级操作系统      ~~~~~~~~~~            &~~~~~94~~~~~&	2\\
+~~~~~~~~~~ 高级计算机体系结构   ~~~~~~~~~~    &~~~~~90~~~~~&	2\\
+~~~~~~~~~~ 高级计算机网络      ~~~~~~~~~~             &~~~~~93~~~~~&	2\\
+~~~~~~~~~~ 博士生应用数学（上）~~~~~~~~~~	&~~~~~90~~~~~&	2\\
+~~~~~~~~~~ 博士生应用数学（下）~~~~~~~~~~	&~~~~~92~~~~~&	2\\
+~~~~~~~~~~ 人工智能导论	 ~~~~~~~~~~   &~~~~~89~~~~~&	2\\
+~~~~~~~~~~ 数据挖掘	  ~~~~~~~~~~                              &~~~~~86~~~~~&	2\\
+~~~~~~~~~~ 机器学习引论	   ~~~~~~~~~~     &~~~~~87~~~~~&	2\\
+~~~~~~~~~~ 网络多媒体搜索引擎	   ~~~~~~~~~~     &~~~~~89~~~~~&	2\\
+		&总计&20\\\cline{2-3}
+&\textsc{绩点}&\textbf{3.58}
+\end{tabular}
+\end{center}
+\end{small}
+%\bigskip
+%\hrule
+%\bigskip
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{兴趣爱好}
+%
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+% %\cvlistdoubleitem{Reading\&Writing}{Travel}
+% %\cvlistdoubleitem{Cooking}{Sports}
+% %\cvlistitem{Violin}
+%
+% \cvitem{}{阅读，写作，旅行，足球，小提琴.}
+
+\urlstyle{rm}
+
+\section{学术成果}
+\mybib{
+
+\textrm{\cvitem{[Ubicomp15]}{\textbf{Huan Li}, Pai Peng, Hua Lu, Lidan Shou, Ke Chen, Gang Chen. E$^2$C$^2$: efficient and effective camera calibration in indoor environments. {\em ACM UbiComp}, 9--12, 2015.}\hypertarget{li20152}}
+
+\textrm{\cvitem{[VLDB16]}{\textbf{Huan Li}, Hua Lu, Xin Chen, Gang Chen, Ke Chen, Lidan Shou. Vita: A Versatile Toolkit for Generating Indoor Mobility Data for Real-World Buildings. {\em PVLDB}, 9(13):1453--1456, 2016.}\hypertarget{li2016a}}
+
+\textrm{\cvitem{[TKDE18]}{\textbf{Huan Li}, Hua Lu, Lidan Shou, Gang Chen, Ke Chen. In Search of Indoor Dense Regions: An Approach Using Indoor Positioning Data. {\em IEEE TKDE}, 15 pages, 2018.}\hypertarget{densepaper}}
+
+\textrm{\cvitem{[VLDB18]}{\textbf{Huan Li}, Feichao Shi, Hua Lu, Gang Chen, Ke Chen, Lidan Shou. TRIPS: A System for Translating Raw Indoor Positioning Data into Visual Mobility Semantics. {\em PVLDB}, 4 pages.}\hypertarget{tripspaper}}
+
+\textrm{\cvitem{[TKDE18, S1]}{\textbf{Huan Li}, Hua Lu, Lidan Shou, Gang Chen, Ke Chen. Finding Most Popular Indoor Semantic Locations Using Uncertain Mobility Data. Submitted to {\em IEEE TKDE}, 14 pages.}\hypertarget{flowpaper}}
+
+\textrm{\cvitem{[VLDB18, S1]}{\textbf{Huan Li}, Hua Lu, Gang Chen, Ke Chen, Qinkuang Chen, Lidan Shou. Towards Translating Raw Indoor Positioning Data into Mobility Semantics. Submitted to {\em PVLDB}, 13 pages.}\hypertarget{semanticpaper}}
+
+}
+
+\section{引用}
+\mybib{
+
+\textrm{\cvitem{[1]}{TRIPS Project. \url{https://longaspire.github.io/trips}.}\hypertarget{tripsUrl}}
+
+\textrm{\cvitem{[2]}{Literature Repository for Indoor Data Management. \url{https://longaspire.github.io/intro2idm-gh}.}\hypertarget{intro2idmUrl}}
+
+\textrm{\cvitem{[3]}{Indoor Data Management. \url{https://longaspire.gitbooks.io/indoor-data-management/content}.}\hypertarget{intro2idmgbUrl}}
+
+\textrm{\cvitem{[4]}{Vita Project. \url{https://longaspire.github.io/vita}.}\hypertarget{vitaUrl}}
+
+\textrm{\cvitem{[5]}{Xiaoling Gu, Lidan Shou, Hua Lu, Gang Chen. A generic framework for cyber-physical web. {\em ACM Middleware}, 1, 2013.}\hypertarget{gu2013generic}}
+
+\textrm{\cvitem{[6]}{Ke Chen, Gang Chen, Lidan Shou, Fei Xia. Pictune: situational music recommendation from geotagged pictures. {\em ACM SIGIR}, 1011--1011, 2012.}\hypertarget{chen2012pictune}}
+
+\textrm{\cvitem{[7]}{Guoliang Li, Jianhua Feng, Jing Xu. Desks: Direction-aware spatial keyword search. {\em IEEE ICDE}, 474--485, 2012.}\hypertarget{li2012desks}}
+
+\textrm{\cvitem{[8]}{SeSaMe workshop 2015. \url{http://sesame.comp.nus.edu.sg/2015workshop}.}\hypertarget{sesameUrl}}
+
+\textrm{\cvitem{[9]}{VLDB2014 - Acknowledgement. \url{http://www.vldb.org/2014/acknowledge.html}.}\hypertarget{vldbUrl}}
+
+\textrm{\cvitem{[10]}{Hua LU's homepage. \url{http://people.cs.aau.dk/~luhua}.}\hypertarget{hualuUrl}}
+
+\textrm{\cvitem{[11]}{2016 TKDE Reviewers List. \url{https://www.computer.org/web/tkde}.}\hypertarget{tkdereviewer}}
+
+
+}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+\end{CJK*}
+\end{document}
